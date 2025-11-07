@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://github.com/BhavyaShany/LabAssignmentKRMU_WebDev/blob/main/Assignment%201/IMG_20250309_221119.jpg?raw=true"
+            alt="Bhavya Shany image" width="100px" heigh="100px" class="Profile">
+        <p>
+            Hello! My name is Bhavya Shany. I am learning web development and this is my first portfolio website.
+        </p>
+    </section>
+     <br><br>
+
+    <hr>
+    <section>
+        <h2>My Skills</h2>
+        <table id="skills" border="3px" align="center">
+        
+                <tr>
+                    <th>Skills</th>
+                    <th>Level</th>
+                </tr>
+        
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Learning</td>
+            </tr>
+        </table>
+    </section>
+    <br><br>
+
+    <hr>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+    
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Project 1</h3>
+                <p>A simple HTML & CSS webpage.</p>
+            </div>
+            <br>
+    
+            <div class="project-box">
+                <h3>Project 2</h3>
+                <p>Another awesome mini project.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <br><br>
+
+    <main id="contact">
+        <h2>Contact Me</h2>
+        <table id="forms" border="3" align="center">
+            <form>
+                <tr>
+                    <td><label for="name">Name:</label></td><br>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <br><br>
+
+                <tr>
+                    <td><label for="email">Email:</label></td><br>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <br><br>
+
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                    </td>
+                </tr>
+                <br><br>
+
+                <tr>
+                <td colspan="2" ><button type="submit" class="btn">Send</button></td>
+                </tr>
+            </form>
+        </table>
+    </main>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#top" id="backToTop" class="btn"> Back to Top</a><br><br>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>Have a Nice Day</p>
+    </footer>
+
+
+
+</body>
+
+</html>
