@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ecd0b4d9;
+    color: #77461bfa;
+}
+
+.hero {
+    background-image: url('/Fantasia/Background.jpeg');
+    /* Added image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(245, 239, 233);
+    position: relative;
+    /* allows overlay */
+    text-align: center;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+header .logo {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f7145c94;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #f8b1b4dd;
+    color: #6e412b;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 100px;
+}
+
+.hero button {
+    background-color: #cb7891a8;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0%;
+    font-size: 28px;
+    color: #fffefc;
+    background-color: #eb9e71ac;
+    padding: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(157, 150, 150, 0.858);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.visit-section {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery .item img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.gallery .item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery .item p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6e412b;
+}
+
+
+/* Hover Effects */
+nav a:hover {
+    color: #f31343;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #f6858ccc;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.foot{
+    color: #784b26;
+    text-align: center;
+}
+
+
+/* Fade-in Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero,
+.section-title,
+.features,
+.visit-section,
+.gallery {
+    animation: fadeIn 1s ease-in-out;
+
+}
